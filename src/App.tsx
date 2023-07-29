@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Title from "./components/Title/Title";
+import styled from "styled-components";
+import Flex from "./components/Flex/Flex";
+import Console from "./components/Console/Console";
+import Button from "./components/Button/Button";
 
-function App() {
+const AppWrapper = styled.div`
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background: black;
+`;
+
+function App({ ...props }) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppWrapper>
+      <Flex justify="center">
+        <Title color="red"> Console cmd 2023. Igoryn 1966 </Title>
+      </Flex>
+
+      <Flex direction="column" margin="10px 0">
+        <Console />
+
+        <Button align="flex-end" color="green">
+          Отправить
+        </Button>
+      </Flex>
+    </AppWrapper>
   );
 }
 
