@@ -1,7 +1,7 @@
 import React, { FC, useState } from "react";
-import { ConsoleProps, StyledConsole } from "./Console.styled";
-import Flex from "../Flex/Flex";
-import Line from "../Line/Line";
+import { ConsoleProps, StyledConsole } from "./styled";
+import Flex from "../Flex";
+import Line from "../Line";
 
 const Console: FC<ConsoleProps> = ({ color, ...props }) => {
   const [lines, setLines] = useState(["C/users/IGORYN_1966>"]);

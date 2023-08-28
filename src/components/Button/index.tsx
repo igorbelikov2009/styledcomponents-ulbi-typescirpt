@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { ButtonProps, StyledButton } from "./Button.styled";
+import { ButtonProps, StyledButton } from "./styled";
 
 const Button: FC<ButtonProps> = (props) => {
   return <StyledButton {...props} />;

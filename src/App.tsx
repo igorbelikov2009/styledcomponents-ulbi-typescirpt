@@ -1,9 +1,9 @@
 import React from "react";
-import Title from "./components/Title/Title";
+import Title from "./components/Title";
 import styled from "styled-components";
-import Flex from "./components/Flex/Flex";
-import Console from "./components/Console/Console";
-import Button from "./components/Button/Button";
+import Flex from "./components/Flex";
+import Console from "./components/Console";
+import Button from "./components/Button";
 
 const AppWrapper = styled.div`
   width: 100%;
